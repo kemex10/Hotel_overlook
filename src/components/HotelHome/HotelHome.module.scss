@@ -1,0 +1,13 @@
+#container {
+    
+    > div {
+
+        article {
+
+            > div {
+                display: block;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}
