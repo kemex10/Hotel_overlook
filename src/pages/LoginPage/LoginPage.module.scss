@@ -1,0 +1,51 @@
+@import '../../colors.scss';
+
+#container {
+    background-color: $bg-color;
+    
+    div {
+        
+        article {
+
+            div {
+                
+                h1 {
+                    font-size: 1.5em;
+                }
+
+                form {
+                    width: 50%;
+
+                    label {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 1rem;
+
+                        input {
+                            height: 30px;
+                            padding-left: .5rem;
+                            margin-top: .25rem;
+                        }
+                    }
+
+                    button {
+                        padding: .5rem 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #container {
+
+        form {
+            width: 100%!important;
+
+            button {
+                width: 100%!important;
+            }
+        }
+    }
+}
