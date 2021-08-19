@@ -1,0 +1,58 @@
+#container {
+    
+    > div {
+        width: 80%;
+        max-width: 1200px;
+        margin: auto;
+
+        article {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            > div {
+                width: calc(95%/3);
+
+                > div {
+
+                    &:first-of-type {
+                        max-height: 200px;
+                        overflow: hidden;
+                        border-radius: 5px;
+    
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+
+                    &:last-of-type {
+                        padding: 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #container {
+    
+        > div {
+    
+            article {
+                flex-direction: column;
+
+                > div {
+                    width: 100%;
+
+                    > div {
+
+                        &:last-of-type {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

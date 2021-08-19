@@ -1,0 +1,51 @@
+@import '../../colors.scss';
+
+#container {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 99;
+        width: 40%;
+        left: 20%;
+        color: $white-color;
+        background-color: #000000aa;
+        padding: .5rem 1rem;
+        box-sizing: border-box;
+        border-bottom: 1rem solid $red-color + $transparency;
+        font-weight: 300;
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #container {
+        height: 200px;
+
+        img {
+            height: 100%;
+            min-width: 100%;
+        }
+
+        h1 {
+            width: 80%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+}
