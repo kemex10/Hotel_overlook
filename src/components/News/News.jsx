@@ -18,7 +18,7 @@ export function News () {
     return (
         <section id={style.container}>
             <div>
-                <h2>Se vores nyheder</h2>
+                <h2>vores nyheder</h2>
                 <article>
                     {news.items ? news.items.map((item, i) => {
                         if (i < 3) {

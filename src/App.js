@@ -31,9 +31,6 @@ function App() {
           <HotelsDestinationsPage />
         </Route>
 
-        <Route path="/vaerelser">
-          <p>Værelser</p>
-        </Route>
 
         <Route exact path="/reservation/:countryName/:cityName/:hotelName/:roomName/:priceType">
           <ReservationPage />

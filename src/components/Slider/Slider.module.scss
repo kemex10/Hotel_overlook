@@ -11,12 +11,12 @@
         transform: translateY(-50%);
         z-index: 99;
         width: 40%;
-        left: 20%;
+        left: 30%;
         color: $white-color;
         background-color: #000000aa;
-        padding: .5rem 1rem;
+        padding: .5rem 6rem;
         box-sizing: border-box;
-        border-bottom: 1rem solid $red-color + $transparency;
+        border-bottom: 1rem solid $white-color + $transparency;
         font-weight: 300;
     }
 

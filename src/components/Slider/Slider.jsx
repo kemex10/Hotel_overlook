@@ -25,7 +25,7 @@ export function Slider () {
 
     return (
         <div id={style.container} className="slider-dka">
-            <h1>Velkommen til Hotel Overlook online</h1>
+            <h1>Velkommen til Hotel Overlook</h1>
             <Carousel>
                 { cityInfo ? cityInfo.map((info, i) => {
                     return (

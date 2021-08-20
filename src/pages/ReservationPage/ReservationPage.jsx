@@ -100,7 +100,7 @@ export function ReservationPage () {
                     <>
                     <div>
                         <h2>Reserver dit fortrukne værelse</h2>
-                        <p>Her kan du vælge destination, hotel, værelsestype og gennemføre din Overlook booking.</p>
+                        <p>Her kan du vælge hotel, og værelse.</p>
                     </div>
                     <div>
                         <form onSubmit={handleSubmit(onSubmit)}>
@@ -283,7 +283,7 @@ export function ReservationPage () {
                             <div>
                                 <label htmlFor="conditions">
                                     <input type="checkbox" id="conditions" {...register('conditions', { required: true })}/>
-                                    Jeg accepterer hermed Overlooks betingelser
+                                    Jeg accepterer hermed Hotellets betingelser
                                 </label>
                                 {errors.conditions && <p className="error">Accepter betingelser</p>}
                                 </div>
