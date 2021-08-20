@@ -10,15 +10,15 @@ export function Footer () {
                     <p>© Hotel Overlook. Alle rettigheder forbeholdt.</p>
                 </div>
                 <div>
-                    <a href="https://twitter.com/" target="_blank" rel="noreferrer">T</a>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">F</a>
+                    <a href="https://twitter.com/" target="_blank" rel="noreferrer">Tw</a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Fa</a>
                 </div>
                 <div>
                     <ul>
                         <li><Link to="/hoteller-og-destinationer">Hoteller og destinationer</Link></li>
                         <li><Link to="/vaerelser">Værelser</Link></li>
                         <li><Link to="/reservation">Reservation</Link></li>
-                        <li><Link to="/om-overlook">Om Overlook</Link></li>
+                        <li><Link to="/login">Login</Link></li>
                     </ul>
                 </div>
             </div>
