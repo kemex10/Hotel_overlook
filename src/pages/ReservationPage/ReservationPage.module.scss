@@ -1,0 +1,122 @@
+@import '../../colors.scss';
+
+#container {
+    background-color: $bg-color;
+
+    .completed {
+        display: block;
+        padding-bottom: 2rem;
+
+        a {
+            display: block;
+            margin: 1rem 0 0 0;
+            color: $red-color;
+        }
+    }
+
+    form {
+        width: 50%;
+
+        > div {
+            margin: .5rem 0;
+
+            &:last-of-type {
+    
+                button {
+                    width: 48%;
+                    padding: .5rem 0;
+                }
+            }
+
+            select, input {
+                height: 30px;
+                padding-left: .5rem;
+            }
+
+            select {
+                cursor: pointer;
+            }
+
+            &.one {
+                
+                label {
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        margin: 0;
+
+                        span {
+                            color: $red-color;
+                        }
+                    }
+
+                    > div {
+                        display: flex;
+                        align-items: center;
+
+                        > * {
+                            cursor: pointer;
+                        }
+    
+                        input {
+                            margin: 0 .25rem 0 0;
+    
+                            &:last-of-type {
+                                margin-left: .75rem;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            &.two {
+                display: flex;
+                justify-content: space-between;
+
+                > div {
+                    width: 48%;
+
+                    label {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+
+                        p {
+                            margin: 0;
+    
+                            span {
+                                color: $red-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.inline {
+
+                label {
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        margin: 0 .25rem 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #container {
+
+        form {
+            width: 100%;
+
+            button {
+                width: 100%!important;
+            }
+        }
+    }
+}

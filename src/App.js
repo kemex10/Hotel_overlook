@@ -4,6 +4,7 @@ import { Navigation } from './components/Navigation/Navigation';
 import { Footer } from './components/Footer/Footer';
 import { FrontPage } from './pages/FrontPage/FrontPage';
 import { HotelsDestinationsPage } from './pages/HotelsDestinationsPage/HotelsDestinationsPage';
+import { ReservationPage } from './pages/ReservationPage/ReservationPage';
 import { LoginPage } from './pages/LoginPage/LoginPage';
 import { useEffect, useState } from 'react';
 
@@ -26,10 +27,21 @@ function App() {
           <FrontPage />
         </Route>
 
-        <Route path="/hoteller-og-Destinationer">
+        <Route path="/hoteller-og-destinationer">
           <HotelsDestinationsPage />
         </Route>
 
+        <Route path="/vaerelser">
+          <p>Værelser</p>
+        </Route>
+
+        <Route exact path="/reservation/:countryName/:cityName/:hotelName/:roomName/:priceType">
+          <ReservationPage />
+        </Route>
+
+        <Route path="/reservation">
+          <ReservationPage />
+        </Route>
 
         <Route path="/login">
           <LoginPage loginData={loginData} setLoginData={setLoginData} />
